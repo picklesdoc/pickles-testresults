@@ -59,10 +59,26 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="AdditionSteps.cs" />
+    <Compile Include="Minimal Features\Failing.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Failing.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Minimal Features\Inconclusive.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inconclusive.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Minimal Features\MinimalSteps.cs" />
     <Compile Include="NotAutomatedAtAll.feature.cs">
       <DependentUpon>NotAutomatedAtAll.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Minimal Features\Passing.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Passing.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,12 +88,25 @@
       <LastGenOutput>Addition.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Minimal Features\Failing.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Failing.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Minimal Features\Inconclusive.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Inconclusive.feature.cs</LastGenOutput>
+    </None>
     <None Include="NotAutomatedAtAll.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>NotAutomatedAtAll.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Minimal Features\Passing.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Passing.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
