@@ -55,6 +55,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Minimal Features\Failing.feature.cs">
+      <DependentUpon>Failing.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Minimal Features\Inconclusive.feature.cs">
+      <DependentUpon>Inconclusive.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Minimal Features\Passing.feature.cs">
+      <DependentUpon>Passing.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="NotAutomatedAtAll.feature.cs">
       <DependentUpon>NotAutomatedAtAll.feature</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -68,6 +83,18 @@
       <LastGenOutput>Addition.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Minimal Features\Failing.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Failing.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Minimal Features\Inconclusive.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Inconclusive.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Minimal Features\Passing.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Passing.feature.cs</LastGenOutput>
+    </None>
     <None Include="NotAutomatedAtAll.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>NotAutomatedAtAll.feature.cs</LastGenOutput>
