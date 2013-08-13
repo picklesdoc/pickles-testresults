@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
+using Shouldly;
 using TechTalk.SpecFlow;
 
-namespace Pickles.TestHarness.nunit
+namespace AutomationLayer
 {
     [Binding]
     public class AdditionSteps
@@ -21,22 +21,22 @@ namespace Pickles.TestHarness.nunit
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(Decimal p0)
         {
-          numbersList.Add((int)p0);
+          this.numbersList.Add((int)p0);
         }
         
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
-          foreach (var i in numbersList)
+          foreach (var i in this.numbersList)
           {
-            result += i;
+            this.result += i;
           }
         }
         
         [Then(@"the result should be (.*) on the screen")]
-        public void ThenTheResultShouldBeOnTheScreen(Decimal p0)
+        public void ThenTheResultShouldBeOnTheScreen(int p0)
         {
-          Assert.AreEqual(p0, result);
+            this.result.ShouldBe(p0);
         }
     }
 }

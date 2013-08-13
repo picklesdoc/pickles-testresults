@@ -1,8 +1,8 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Shouldly;
 using TechTalk.SpecFlow;
 
-namespace Pickles.TestHarness.MsTest
+namespace AutomationLayer.MinimalFeatures
 {
     [Binding]
     public class MinimalSteps
@@ -10,19 +10,18 @@ namespace Pickles.TestHarness.MsTest
         [Then(@"passing step")]
         public void ThenPassingStep()
         {
-            
         }
         
         [Then(@"inconclusive step")]
         public void ThenInconclusiveStep()
         {
-            Assert.Inconclusive("by design");
+            ScenarioContext.Current.Pending();
         }
         
         [Then(@"failing step")]
         public void ThenFailingStep()
         {
-            Assert.Fail("by design");
+            true.ShouldBe(false);
         }
     }
 }
