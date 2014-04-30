@@ -73,6 +73,11 @@
       <DependentUpon>NotAutomatedAtAll.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScenarioOutlines.feature.cs">
+      <DependentUpon>ScenarioOutlines.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Addition.feature">
@@ -97,12 +102,19 @@
       <LastGenOutput>NotAutomatedAtAll.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="ScenarioOutlines.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScenarioOutlines.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutomationLayer\AutomationLayer.csproj">
       <Project>{073862de-d599-4941-9716-03206cf1cfa2}</Project>
       <Name>AutomationLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

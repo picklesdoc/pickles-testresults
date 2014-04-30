@@ -81,6 +81,11 @@
       <DependentUpon>Passing.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScenarioOutlines.feature.cs">
+      <DependentUpon>ScenarioOutlines.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Addition.feature">
@@ -106,6 +111,10 @@
     <None Include="Minimal Features\Passing.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Passing.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ScenarioOutlines.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScenarioOutlines.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
