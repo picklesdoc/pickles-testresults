@@ -73,22 +73,22 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, Variant 0", Description="\nThis means the entire scenario outline passes.", SourceLine=11)]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, pass 1", Description="\nThis means the entire scenario outline passes.", SourceLine=11)]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass1()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass 1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, Variant 1", Description="\nThis means the entire scenario outline passes.", SourceLine=12)]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, pass 2", Description="\nThis means the entire scenario outline passes.", SourceLine=12)]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass2()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass 2", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, Variant 2", Description="\nThis means the entire scenario outline passes.", SourceLine=13)]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant2()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where all scenarios pass, pass 3", Description="\nThis means the entire scenario outline passes.", SourceLine=13)]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass3()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass 3", ((string[])(null)));
         }
         
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive(string result, string[] exampleTags)
@@ -102,22 +102,22 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, Variant 0", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=24)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, pass         1", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=24)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Pass1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass         1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, Variant 1", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=25)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, pass         2", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=25)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Pass2()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass         2", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, Variant 2", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=26)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant2()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario is inconclusive, inconclusive 1", Description="\nThis means the entire scenario outline is inconclusive.", SourceLine=26)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Inconclusive1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("inconclusive", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("inconclusive 1", ((string[])(null)));
         }
         
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails(string result, string[] exampleTags)
@@ -131,22 +131,22 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, Variant 0", Description="\nThis means the entire scenario outline fails.", SourceLine=37)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, pass 1", Description="\nThis means the entire scenario outline fails.", SourceLine=37)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Pass1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass 1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, Variant 1", Description="\nThis means the entire scenario outline fails.", SourceLine=38)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, pass 2", Description="\nThis means the entire scenario outline fails.", SourceLine=38)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Pass2()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass 2", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, Variant 2", Description="\nThis means the entire scenario outline fails.", SourceLine=39)]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant2()
+        [TechTalk.SpecRun.ScenarioAttribute("This is a scenario outline where one scenario fails, fail 1", Description="\nThis means the entire scenario outline fails.", SourceLine=39)]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Fail1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("fail", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("fail 1", ((string[])(null)));
         }
         
         public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections_(string result, string[] exampleTags)
@@ -160,46 +160,46 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 1, Varian" +
-            "t 0", SourceLine=48)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 1, pass 1" +
+            "", SourceLine=48)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Pass1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass 1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 1, Varian" +
-            "t 1", SourceLine=49)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 1, pass 2" +
+            "", SourceLine=49)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Pass2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass 2", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 2, Varian" +
-            "t 0", SourceLine=53)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 2, inconc" +
+            "lusive 1", SourceLine=53)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Inconclusive1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive 1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 2, Varian" +
-            "t 1", SourceLine=54)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 2, inconc" +
+            "lusive 2", SourceLine=54)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Inconclusive2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive 2", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 3, Varian" +
-            "t 0", SourceLine=58)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Variant0()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 3, fail 1" +
+            "", SourceLine=58)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Fail1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail 1", ((string[])(null)));
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 3, Varian" +
-            "t 1", SourceLine=59)]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Variant1()
+        [TechTalk.SpecRun.ScenarioAttribute("And we can go totally bonkers with multiple example sections., Examples 3, fail 2" +
+            "", SourceLine=59)]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Fail2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail 2", ((string[])(null)));
         }
         
         [TechTalk.SpecRun.TestRunCleanup()]
