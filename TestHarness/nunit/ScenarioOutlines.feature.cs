@@ -66,9 +66,9 @@ namespace Pickles.TestHarness.nunit
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("This is a scenario outline where all scenarios pass")]
-        [NUnit.Framework.TestCaseAttribute("pass 1", null)]
-        [NUnit.Framework.TestCaseAttribute("pass 2", null)]
-        [NUnit.Framework.TestCaseAttribute("pass 3", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_2", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_3", null)]
         public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where all scenarios pass", exampleTags);
@@ -82,9 +82,9 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("This is a scenario outline where one scenario is inconclusive")]
-        [NUnit.Framework.TestCaseAttribute("pass         1", null)]
-        [NUnit.Framework.TestCaseAttribute("pass         2", null)]
-        [NUnit.Framework.TestCaseAttribute("inconclusive 1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_2", null)]
+        [NUnit.Framework.TestCaseAttribute("inconclusive_1", null)]
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where one scenario is inconclusive", exampleTags);
@@ -98,9 +98,9 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("This is a scenario outline where one scenario fails")]
-        [NUnit.Framework.TestCaseAttribute("pass 1", null)]
-        [NUnit.Framework.TestCaseAttribute("pass 2", null)]
-        [NUnit.Framework.TestCaseAttribute("fail 1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_2", null)]
+        [NUnit.Framework.TestCaseAttribute("fail_1", null)]
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where one scenario fails", exampleTags);
@@ -114,12 +114,12 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
-        [NUnit.Framework.TestCaseAttribute("pass 1", null)]
-        [NUnit.Framework.TestCaseAttribute("pass 2", null)]
-        [NUnit.Framework.TestCaseAttribute("inconclusive 1", null)]
-        [NUnit.Framework.TestCaseAttribute("inconclusive 2", null)]
-        [NUnit.Framework.TestCaseAttribute("fail 1", null)]
-        [NUnit.Framework.TestCaseAttribute("fail 2", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_1", null)]
+        [NUnit.Framework.TestCaseAttribute("pass_2", null)]
+        [NUnit.Framework.TestCaseAttribute("inconclusive_1", null)]
+        [NUnit.Framework.TestCaseAttribute("inconclusive_2", null)]
+        [NUnit.Framework.TestCaseAttribute("fail_1", null)]
+        [NUnit.Framework.TestCaseAttribute("fail_2", null)]
         public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections_(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("And we can go totally bonkers with multiple example sections.", exampleTags);

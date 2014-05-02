@@ -9,9 +9,9 @@ Scenario Outline: This is a scenario outline where all scenarios pass
 
   Examples: 
     | result |
-    | pass 1 |
-    | pass 2 |
-    | pass 3 |
+    | pass_1 |
+    | pass_2 |
+    | pass_3 |
 
     
 Scenario Outline: This is a scenario outline where one scenario is inconclusive
@@ -22,9 +22,9 @@ Scenario Outline: This is a scenario outline where one scenario is inconclusive
 
   Examples: 
     | result         |
-    | pass         1 |
-    | pass         2 |
-    | inconclusive 1 |
+    | pass_1         |
+    | pass_2         |
+    | inconclusive_1 |
 
 
 Scenario Outline: This is a scenario outline where one scenario fails
@@ -35,9 +35,9 @@ Scenario Outline: This is a scenario outline where one scenario fails
 
   Examples: 
     | result |
-    | pass 1 |
-    | pass 2 |
-    | fail 1 |
+    | pass_1 |
+    | pass_2 |
+    | fail_1 |
 
 
 Scenario Outline: And we can go totally bonkers with multiple example sections.
@@ -46,15 +46,15 @@ Scenario Outline: And we can go totally bonkers with multiple example sections.
 
   Examples: 
     | result |
-    | pass 1 |
-    | pass 2 |
+    | pass_1 |
+    | pass_2 |
 
   Examples: 
     | result         |
-    | inconclusive 1 |
-    | inconclusive 2 |
+    | inconclusive_1 |
+    | inconclusive_2 |
 
   Examples: 
     | result |
-    | fail 1 |
-    | fail 2 |
+    | fail_1 |
+    | fail_2 |

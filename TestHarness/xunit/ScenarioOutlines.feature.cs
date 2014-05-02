@@ -75,9 +75,9 @@ namespace Pickles.TestHarness.xunit
         [Xunit.Extensions.TheoryAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
         [Xunit.TraitAttribute("Description", "This is a scenario outline where all scenarios pass")]
-        [Xunit.Extensions.InlineDataAttribute("pass 1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("pass 2", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("pass 3", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_3", new string[0])]
         public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where all scenarios pass", exampleTags);
@@ -92,9 +92,9 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.Extensions.TheoryAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
         [Xunit.TraitAttribute("Description", "This is a scenario outline where one scenario is inconclusive")]
-        [Xunit.Extensions.InlineDataAttribute("pass         1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("pass         2", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("inconclusive 1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("inconclusive_1", new string[0])]
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where one scenario is inconclusive", exampleTags);
@@ -109,9 +109,9 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.Extensions.TheoryAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
         [Xunit.TraitAttribute("Description", "This is a scenario outline where one scenario fails")]
-        [Xunit.Extensions.InlineDataAttribute("pass 1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("pass 2", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("fail 1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("fail_1", new string[0])]
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a scenario outline where one scenario fails", exampleTags);
@@ -126,12 +126,12 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.Extensions.TheoryAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
         [Xunit.TraitAttribute("Description", "And we can go totally bonkers with multiple example sections.")]
-        [Xunit.Extensions.InlineDataAttribute("pass 1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("pass 2", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("inconclusive 1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("inconclusive 2", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("fail 1", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("fail 2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("pass_2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("inconclusive_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("inconclusive_2", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("fail_1", new string[0])]
+        [Xunit.Extensions.InlineDataAttribute("fail_2", new string[0])]
         public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections_(string result, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("And we can go totally bonkers with multiple example sections.", exampleTags);
