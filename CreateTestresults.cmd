@@ -1,6 +1,5 @@
 @pushd %~dp0
 
-REM goto begin
 ECHO Remember to build the solution first!
 REM pause
 
@@ -19,7 +18,7 @@ Cd "%~dp0\TestHarness\packagesNonNuget\xunit.runner"
 
 del "%~dp0\results-example-mstest.trx"
 Cd "%~dp0\TestHarness\mstest\bin\Debug\"
-"%ProgramFiles(x86)%\Microsoft Visual Studio 11.0\Common7\IDE\MSTest.exe" /testcontainer:"mstestHarness.dll" /resultsfile:"%~dp0\results-example-mstest.trx"
+"%ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe" /testcontainer:"mstestHarness.dll" /resultsfile:"%~dp0\results-example-mstest.trx" /testsettings:"%~dp0\TestHarness\TestSettings.testsettings"
 
 pause
 
