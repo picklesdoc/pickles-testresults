@@ -82,31 +82,31 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where all scenarios pass")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_1")]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass_1()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where all scenarios pass")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_2")]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass_2()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass_2", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where all scenarios pass")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 2")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Variant2()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_3")]
+        public virtual void ThisIsAScenarioOutlineWhereAllScenariosPass_Pass_3()
         {
-            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereAllScenariosPass("pass_3", ((string[])(null)));
         }
         
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive(string result, string[] exampleTags)
@@ -123,31 +123,31 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario is inconclusive")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_1")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Pass_1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario is inconclusive")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_2")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Pass_2()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("pass_2", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario is inconclusive")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 2")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Variant2()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "inconclusive_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive_1")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive_Inconclusive_1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("inconclusive", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioIsInconclusive("inconclusive_1", ((string[])(null)));
         }
         
         public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails(string result, string[] exampleTags)
@@ -164,31 +164,31 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario fails")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_1")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Pass_1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario fails")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_2")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Pass_2()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("pass_2", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This is a scenario outline where one scenario fails")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 2")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail")]
-        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Variant2()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "fail_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail_1")]
+        public virtual void ThisIsAScenarioOutlineWhereOneScenarioFails_Fail_1()
         {
-            this.ThisIsAScenarioOutlineWhereOneScenarioFails("fail", ((string[])(null)));
+            this.ThisIsAScenarioOutlineWhereOneScenarioFails("fail_1", ((string[])(null)));
         }
         
         public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections_(string result, string[] exampleTags)
@@ -205,61 +205,61 @@ this.ScenarioSetup(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_1")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Pass_1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "pass_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "pass_2")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet0_Pass_2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("pass_2", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "inconclusive_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive_1")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Inconclusive_1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "inconclusive_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "inconclusive_2")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet1_Inconclusive_2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("inconclusive_2", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Variant0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "fail_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail_1")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Fail_1()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail_1", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("And we can go totally bonkers with multiple example sections.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail")]
-        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Variant1()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "fail_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:result", "fail_2")]
+        public virtual void AndWeCanGoTotallyBonkersWithMultipleExampleSections__ExampleSet2_Fail_2()
         {
-            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail", ((string[])(null)));
+            this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail_2", ((string[])(null)));
         }
     }
 }

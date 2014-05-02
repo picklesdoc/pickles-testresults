@@ -12,25 +12,17 @@ namespace AutomationLayer
     [Then(@"the scenario will '(.*)'")]
     public void ThenTheScenarioWill(string result)
     {
-      switch (result.ToUpperInvariant())
+      if (result.ToUpperInvariant().StartsWith("PASS"))
       {
-        case "PASS":
-          {
-            // nothing to be done
-            break;
-          }
-
-        case "FAIL":
-          {
-            true.ShouldBe(false);
-            break;
-          }
-
-        default:
-          {
-            ScenarioContext.Current.Pending();
-            break;
-          }
+        // nothing to be done
+      }
+      else if (result.ToUpperInvariant().StartsWith("FAIL"))
+      {
+        true.ShouldBe(false);
+      }
+      else
+      {
+        ScenarioContext.Current.Pending();
       }
     }
   }
