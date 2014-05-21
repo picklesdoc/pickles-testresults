@@ -130,6 +130,20 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Deal correctly with backslashes in the examples")]
+        [NUnit.Framework.TestCaseAttribute("c:\\Temp\\", null)]
+        public virtual void DealCorrectlyWithBackslashesInTheExamples(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with backslashes in the examples", exampleTags);
+#line 63
+this.ScenarioSetup(scenarioInfo);
+#line 65
+  testRunner.When(string.Format("I have backslashes in the value, for example a \'{0}\'", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

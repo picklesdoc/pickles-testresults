@@ -202,6 +202,23 @@ this.ScenarioSetup(scenarioInfo);
             this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail_2", ((string[])(null)));
         }
         
+        public virtual void DealCorrectlyWithBackslashesInTheExamples(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with backslashes in the examples", exampleTags);
+#line 63
+this.ScenarioSetup(scenarioInfo);
+#line 65
+  testRunner.When(string.Format("I have backslashes in the value, for example a \'{0}\'", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Deal correctly with backslashes in the examples, c:\\Temp\\", SourceLine=68)]
+        public virtual void DealCorrectlyWithBackslashesInTheExamples_CTemp()
+        {
+            this.DealCorrectlyWithBackslashesInTheExamples("c:\\Temp\\", ((string[])(null)));
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {

@@ -261,6 +261,27 @@ this.ScenarioSetup(scenarioInfo);
         {
             this.AndWeCanGoTotallyBonkersWithMultipleExampleSections_("fail_2", ((string[])(null)));
         }
+        
+        public virtual void DealCorrectlyWithBackslashesInTheExamples(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with backslashes in the examples", exampleTags);
+#line 63
+this.ScenarioSetup(scenarioInfo);
+#line 65
+  testRunner.When(string.Format("I have backslashes in the value, for example a \'{0}\'", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Deal correctly with backslashes in the examples")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenario Outlines")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "c:\\Temp\\")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:file path", "c:\\Temp\\")]
+        public virtual void DealCorrectlyWithBackslashesInTheExamples_CTemp()
+        {
+            this.DealCorrectlyWithBackslashesInTheExamples("c:\\Temp\\", ((string[])(null)));
+        }
     }
 }
 #pragma warning restore

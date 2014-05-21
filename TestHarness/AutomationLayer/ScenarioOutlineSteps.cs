@@ -25,5 +25,11 @@ namespace AutomationLayer
         ScenarioContext.Current.Pending();
       }
     }
+
+    [When(@"I have backslashes in the value, for example a '(.*)'")]
+    public void WhenIHaveBackslashesInTheValueForExampleAFilePath(string filePath)
+    {
+      // nothing to be done
+    }
   }
 }

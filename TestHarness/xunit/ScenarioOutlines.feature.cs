@@ -143,6 +143,21 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [Xunit.Extensions.TheoryAttribute()]
+        [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
+        [Xunit.TraitAttribute("Description", "Deal correctly with backslashes in the examples")]
+        [Xunit.Extensions.InlineDataAttribute("c:\\Temp\\", new string[0])]
+        public virtual void DealCorrectlyWithBackslashesInTheExamples(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with backslashes in the examples", exampleTags);
+#line 63
+this.ScenarioSetup(scenarioInfo);
+#line 65
+  testRunner.When(string.Format("I have backslashes in the value, for example a \'{0}\'", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable
