@@ -58,3 +58,12 @@ Scenario Outline: And we can go totally bonkers with multiple example sections.
     | result |
     | fail_1 |
     | fail_2 |
+
+
+Scenario Outline: Deal correctly with backslashes in the examples
+
+  When I have backslashes in the value, for example a '<file path>'
+
+  Examples:
+    | file path |
+    | c:\Temp\  |
