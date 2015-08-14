@@ -86,6 +86,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="OrdinaryUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Addition.feature">
