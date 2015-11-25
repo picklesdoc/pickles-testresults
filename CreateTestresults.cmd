@@ -13,6 +13,8 @@ pause
 
 "%~dp0\TestHarness\packagesNonNuget\xunit.runner\xunit.console.clr4.exe" "%~dp0\TestHarness\xunit\bin\Debug\xunitHarness.dll" /xml "%~dp0\results-example-xunit.xml"
 
+"%~dp0\TestHarness\packages\xunit.runner.console.2.1.0\tools\xunit.console.exe" "%~dp0\TestHarness\xunit2\bin\Debug\xunit2Harness.dll" -xml "%~dp0\results-example-xunit2.xml" -parallel none
+
 del "%~dp0\results-example-mstest.trx"
 "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe" /testcontainer:"%~dp0\TestHarness\mstest\bin\Debug\mstestHarness.dll" /resultsfile:"%~dp0\results-example-mstest.trx" /testsettings:"%~dp0\TestHarness\TestSettings.testsettings"
 
