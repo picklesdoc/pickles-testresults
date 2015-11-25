@@ -81,11 +81,11 @@ namespace Pickles.TestHarness.xunit2
             this.ScenarioTearDown();
         }
         
-        [Xunit.Extensions.TheoryAttribute()]
+        [Xunit.TheoryAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Addition")]
         [Xunit.TraitAttribute("Description", "Adding several numbers")]
-        [Xunit.Extensions.InlineDataAttribute("60", "70", "130", "260", new string[0])]
-        [Xunit.Extensions.InlineDataAttribute("40", "50", "90", "180", new string[0])]
+        [Xunit.InlineDataAttribute("60", "70", "130", "260", new string[0])]
+        [Xunit.InlineDataAttribute("40", "50", "90", "180", new string[0])]
         public virtual void AddingSeveralNumbers(string firstNumber, string secondNumber, string thirdNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
