@@ -94,6 +94,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="XunitCompatibility.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutomationLayer\AutomationLayer.csproj">
