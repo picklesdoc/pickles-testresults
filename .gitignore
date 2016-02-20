@@ -113,3 +113,4 @@ results-example-specrun.html
 results-example-nunit3.xml
 results-example-xunit2.xml
 results-example.json.json
+TestHarness/.vs/config/applicationhost.config
