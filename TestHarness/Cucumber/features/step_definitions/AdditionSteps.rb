@@ -24,3 +24,7 @@ end
 Then(/^the result should be (\d+)\.(\d+) on the screen$/) do |arg1, arg2|
   expect("this is a hacky way of making the scenario with a non-integer number").to eql("fail")
 end
+
+Given(/^the background step fails$/) do
+  expect("true").to eql("false")
+end

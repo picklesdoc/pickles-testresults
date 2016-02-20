@@ -60,6 +60,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="FailingBackground.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FailingBackground.feature</DependentUpon>
+    </Compile>
     <Compile Include="Minimal Features\Failing.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,6 +99,10 @@
       <LastGenOutput>Addition.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="FailingBackground.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FailingBackground.feature.cs</LastGenOutput>
+    </None>
     <None Include="Minimal Features\Failing.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Failing.feature.cs</LastGenOutput>

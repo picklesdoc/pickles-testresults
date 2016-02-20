@@ -19,6 +19,12 @@ namespace AutomationLayer
             this.result = 0;
         }
 
+        [Given(@"the background step fails")]
+        public void GivenTheBackgroundStepFails()
+        {
+            1.ShouldBe(2);
+        }
+
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(Decimal p0)
         {
