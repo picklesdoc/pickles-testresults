@@ -1,4 +1,4 @@
-﻿Feature: Inconclusive
+Feature: Inconclusive
 
 Scenario: Inconclusive Feature Passing Scenario
     Then passing step

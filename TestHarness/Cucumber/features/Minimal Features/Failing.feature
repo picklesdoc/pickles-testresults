@@ -1,4 +1,4 @@
-﻿Feature: Failing
+Feature: Failing
 
 Scenario: Failing Feature Passing Scenario
     Then passing step

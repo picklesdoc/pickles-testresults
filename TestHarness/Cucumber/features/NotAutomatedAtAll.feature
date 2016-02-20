@@ -1,6 +1,6 @@
-﻿Feature: Not Automated At All
+Feature: Not Automated At All
 
-Background: 
+Background:
   Given unimplemented step
 
 Scenario: Not automated scenario 1
