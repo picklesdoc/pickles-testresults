@@ -1,10 +1,10 @@
 Given(/^the calculator has clean memory$/) do
-  @result = 0
+  @result = 0.0
   @numbersList = []
 end
 
-Given(/^I have entered (\d+) into the calculator$/) do |arg1|
-  @numbersList << arg1.to_i
+Given(/^I have entered (\d+\.?\d*) into the calculator$/) do |arg1|
+  @numbersList << arg1.to_f
 end
 
 When(/^I press add$/) do
@@ -13,6 +13,6 @@ When(/^I press add$/) do
   end
 end
 
-Then(/^the result should be (\d+) on the screen$/) do |arg1|
-  expect(@result).to eql(arg1.to_i)
+Then(/^the result should be (\d+\.?\d*) on the screen$/) do |arg1|
+  expect(@result).to eql(arg1.to_f)
 end
