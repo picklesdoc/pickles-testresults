@@ -112,3 +112,4 @@ results-example-mstest.trx
 results-example-specrun.html
 results-example-nunit3.xml
 results-example-xunit2.xml
+TestHarness/Cucumber/results-example-json.json
