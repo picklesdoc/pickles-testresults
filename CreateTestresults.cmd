@@ -19,7 +19,7 @@ del "%~dp0\results-example-mstest.trx"
 "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe" /testcontainer:"%~dp0\TestHarness\mstest\bin\Debug\mstestHarness.dll" /resultsfile:"%~dp0\results-example-mstest.trx" /testsettings:"%~dp0\TestHarness\TestSettings.testsettings"
 
 cd "%~dp0\TestHarness\Cucumber"
-cucumber --format json_pretty --out "%~dp0\results-example.json.json" --tags ~@ignore
+cucumber --format json_pretty --out "%~dp0\results-example-json.json" --tags ~@ignore
 cd "%~dp0"
 
 @popd
