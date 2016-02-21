@@ -3,8 +3,6 @@
 
 ECHO Remember to build the solution first!
 
-pause
-
 "%~dp0\TestHarness\packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" "%~dp0\TestHarness\nunit\bin\Debug\nunitHarness.dll" /result="%~dp0\results-example-nunit.xml"
 
 "%~dp0\TestHarness\packages\NUnit.Console.3.0.0\tools\nunit3-console.exe" "%~dp0\TestHarness\nunit3\bin\Debug\nunit3Harness.dll" /result="%~dp0\results-example-nunit3.xml"
