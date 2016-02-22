@@ -20,6 +20,10 @@ cd "%~dp0\TestHarness\Cucumber"
 call cucumber --format json_pretty --out "%~dp0\results-example-json.json" --tags ~@ignore
 cd "%~dp0"
 
+cd "%~dp0\TestHarness\CucumberJS"
+call ..\..\node_modules\.bin\cucumber-js --format json:"..\..\results-example-cucumberjs-json.json" --tags ~@ignore
+cd "%~dp0"
+
 copy "%~dp0\results-example-nunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit2\"
 copy "%~dp0\results-example-nunit3.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit3\"
 copy "%~dp0\results-example-xunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\XUnit\XUnit1\"
@@ -27,5 +31,6 @@ copy "%~dp0\results-example-xunit2.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.Te
 copy "%~dp0\results-example-specrun.html" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\SpecRun\"
 copy "%~dp0\results-example-mstest.trx" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\MsTest\"
 copy "%~dp0\results-example-json.json" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\CucumberJSON\"
+copy "%~dp0\results-example-cucumberjs-json.json" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\CucumberJSON\"
 
 @popd
