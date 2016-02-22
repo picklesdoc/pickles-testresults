@@ -1,0 +1,26 @@
+'use strict';
+
+var assert = require('assert');
+
+module.exports = function() {
+
+  this.Then(/^the scenario will 'pass_(\d+)'$/, function (result, callback) {
+    // nothing to be done here
+    callback();
+  });
+
+  this.Then(/^the scenario will 'inconclusive_(\d+)'$/, function (result, callback) {
+    // we want pending here
+    callback.pending();
+  });
+
+  this.Then(/^the scenario will 'fail_(\d+)'$/, function (result, callback) {
+    assert.equal("true", "false");
+    callback();
+  });
+
+  this.When(/^I have backslashes in the value, for example a '(.*)'$/, function (filePath, callback) {
+    // nothing to be done here
+    callback();
+  });
+};
