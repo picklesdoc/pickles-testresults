@@ -60,6 +60,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="FailingBackground.feature.cs">
+      <DependentUpon>FailingBackground.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Minimal Features\Failing.feature.cs">
       <DependentUpon>Failing.feature</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -96,6 +101,10 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="FailingBackground.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FailingBackground.feature.cs</LastGenOutput>
     </None>
     <None Include="Minimal Features\Failing.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

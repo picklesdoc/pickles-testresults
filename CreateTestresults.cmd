@@ -3,8 +3,6 @@
 
 ECHO Remember to build the solution first!
 
-pause
-
 "%~dp0\TestHarness\packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" "%~dp0\TestHarness\nunit\bin\Debug\nunitHarness.dll" /result="%~dp0\results-example-nunit.xml"
 
 "%~dp0\TestHarness\packages\NUnit.Console.3.0.0\tools\nunit3-console.exe" "%~dp0\TestHarness\nunit3\bin\Debug\nunit3Harness.dll" /result="%~dp0\results-example-nunit3.xml"
@@ -19,7 +17,15 @@ del "%~dp0\results-example-mstest.trx"
 "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe" /testcontainer:"%~dp0\TestHarness\mstest\bin\Debug\mstestHarness.dll" /resultsfile:"%~dp0\results-example-mstest.trx" /testsettings:"%~dp0\TestHarness\TestSettings.testsettings"
 
 cd "%~dp0\TestHarness\Cucumber"
-cucumber --format json_pretty --out "%~dp0\results-example.json.json" --tags ~@ignore
+call cucumber --format json_pretty --out "%~dp0\results-example-json.json" --tags ~@ignore
 cd "%~dp0"
+
+copy "%~dp0\results-example-nunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit2\"
+copy "%~dp0\results-example-nunit3.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit3\"
+copy "%~dp0\results-example-xunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\XUnit\XUnit1\"
+copy "%~dp0\results-example-xunit2.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\XUnit\XUnit2\"
+copy "%~dp0\results-example-specrun.html" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\SpecRun\"
+copy "%~dp0\results-example-mstest.trx" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\MsTest\"
+copy "%~dp0\results-example-json.json" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\CucumberJSON\"
 
 @popd
