@@ -116,3 +116,4 @@ results-example-json.json
 TestHarness/.vs/config/applicationhost.config
 node_modules
 results-example-cucumberjs-json.json
+results-example-vstest.trx
