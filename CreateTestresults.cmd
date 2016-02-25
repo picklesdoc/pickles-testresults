@@ -24,13 +24,18 @@ cd "%~dp0\TestHarness\CucumberJS"
 call ..\..\node_modules\.bin\cucumber-js --format json:"..\..\results-example-cucumberjs-json.json" --tags ~@ignore
 cd "%~dp0"
 
+rmdir /s /q "%~dp0\TestResults\"
+"%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" "%~dp0\TestHarness\mstest\bin\Debug\mstestHarness.dll" /logger:trx
+FOR /R "%~dp0\TestResults\" %%G IN (*.trx) DO copy "%%G" "%~dp0\results-example-vstest.trx"
+
 copy "%~dp0\results-example-nunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit2\"
 copy "%~dp0\results-example-nunit3.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\NUnit\NUnit3\"
 copy "%~dp0\results-example-xunit.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\XUnit\XUnit1\"
 copy "%~dp0\results-example-xunit2.xml" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\XUnit\XUnit2\"
 copy "%~dp0\results-example-specrun.html" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\SpecRun\"
-copy "%~dp0\results-example-mstest.trx" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\MsTest\"
 copy "%~dp0\results-example-json.json" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\CucumberJSON\"
+copy "%~dp0\results-example-mstest.trx" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\MsTest\"
 copy "%~dp0\results-example-cucumberjs-json.json" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\CucumberJSON\"
+copy "%~dp0\results-example-vstest.trx" "%~dp0\..\Pickles\src\Pickles\Pickles.TestFrameworks.UnitTests\VsTest\"
 
 @popd
