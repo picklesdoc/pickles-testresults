@@ -31,5 +31,11 @@ namespace AutomationLayer
     {
       // nothing to be done
     }
+
+      [When(@"I have parenthesis in the value, for example a '(.*)'")]
+      public void WhenIHaveParenthesisInTheValueForExampleAnOverlyDescriptiveField(string description)
+      {
+          // nothing to be done - test case requires pass
+      }
   }
 }
