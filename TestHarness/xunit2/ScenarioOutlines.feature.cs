@@ -157,7 +157,22 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
-        
+
+        [Xunit.TheoryAttribute()]
+        [Xunit.TraitAttribute("FeatureTitle", "Scenario Outlines")]
+        [Xunit.TraitAttribute("Description", "Deal correctly with parenthesis in the examples")]
+        [Xunit.InlineDataAttribute("This is a description (and more)", new string[0])]
+        public virtual void DealCorrectlyWithParenthesisInTheExamples(string description, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with parenthesis in the examples", exampleTags);
+#line 63
+            this.ScenarioSetup(scenarioInfo);
+#line 65
+            testRunner.When(string.Format("I have parenthesis in the value, for example an \'{0}\'", description), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable

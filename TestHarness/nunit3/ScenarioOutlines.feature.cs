@@ -144,6 +144,20 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Deal correctly with parenthesis in the examples")]
+        [NUnit.Framework.TestCaseAttribute("This is a description (and more)", null)]
+        public virtual void DealCorrectlyWithParenthesisInTheExamples(string overlyDescriptiveField, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deal correctly with parenthesis in the examples", exampleTags);
+#line 72
+this.ScenarioSetup(scenarioInfo);
+#line 74
+  testRunner.When(string.Format("I have parenthesis in the value, for example an \'{0}\'", overlyDescriptiveField), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
