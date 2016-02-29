@@ -24,7 +24,7 @@ module.exports = function() {
     callback();
   });
 
-  this.When(/^I have parenthesis in the value, for example a '(.*)'$/, function (description, callback) {
+  this.When(/^I have parenthesis in the value, for example an '(.*)'$/, function (description, callback) {
   	// nothing to be done here
   	callback();
   });

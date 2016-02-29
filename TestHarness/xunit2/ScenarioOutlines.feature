@@ -40,7 +40,7 @@ Scenario Outline: This is a scenario outline where one scenario fails
     | fail_1 |
 
 
-Scenario Outline: And we can go totally bonkers with multiple example sections.it co 
+Scenario Outline: And we can go totally bonkers with multiple example sections.
 
   Then the scenario will '<result>'
 
@@ -71,9 +71,8 @@ Scenario Outline: Deal correctly with backslashes in the examples
 
 Scenario Outline: Deal correctly with parenthesis in the examples
 
-  When I have parenthesis in the value, for example a '<overly descriptive field>'
+  When I have parenthesis in the value, for example an '<overly descriptive field>'
 
   Examples:
     | overly descriptive field		   |
     | This is a description (and more) |
-

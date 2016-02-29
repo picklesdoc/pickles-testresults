@@ -168,7 +168,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 63
             this.ScenarioSetup(scenarioInfo);
 #line 65
-            testRunner.When(string.Format("I have parenthesis in the value, for example a \'{0}\'", description), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.When(string.Format("I have parenthesis in the value, for example an \'{0}\'", description), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

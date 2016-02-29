@@ -14,6 +14,6 @@ When(/^I have backslashes in the value, for example a 'c:\\Temp\\'$/) do
   # Nothing to be done here
 end
 
-When(/^I have parenthesis in the value, for example a '(.*)'$/) do |arg1|
+When(/^I have parenthesis in the value, for example an '(.*)'$/) do |arg1|
   #Nothing to be done here
 end

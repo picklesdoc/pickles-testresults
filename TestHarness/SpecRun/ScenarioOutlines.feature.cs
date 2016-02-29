@@ -225,7 +225,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 72
 this.ScenarioSetup(scenarioInfo);
 #line 74
-  testRunner.When(string.Format("I have parenthesis in the value, for example a \'{0}\'", overlyDescriptiveField), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When(string.Format("I have parenthesis in the value, for example an \'{0}\'", overlyDescriptiveField), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

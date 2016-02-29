@@ -71,7 +71,7 @@ Scenario Outline: Deal correctly with backslashes in the examples
 
 Scenario Outline: Deal correctly with parenthesis in the examples
 
-  When I have parenthesis in the value, for example a '<overly descriptive field>'
+  When I have parenthesis in the value, for example an '<overly descriptive field>'
 
   Examples:
     | overly descriptive field		   |
