@@ -74,5 +74,5 @@ Scenario Outline: Deal correctly with parenthesis in the examples
   When I have parenthesis in the value, for example an '<overly descriptive field>'
 
   Examples:
-    | overly descriptive field		   |
+    | overly descriptive field         |
     | This is a description (and more) |
