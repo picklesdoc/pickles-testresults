@@ -88,6 +88,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ScenarioOutlines.feature</DependentUpon>
     </Compile>
+    <Compile Include="ScenariosWithSpecialCharacters.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScenariosWithSpecialCharacters.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Addition.feature">
@@ -119,6 +124,10 @@
     <None Include="ScenarioOutlines.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ScenarioOutlines.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ScenariosWithSpecialCharacters.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScenariosWithSpecialCharacters.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
