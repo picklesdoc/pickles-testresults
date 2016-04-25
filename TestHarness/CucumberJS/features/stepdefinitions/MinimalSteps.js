@@ -11,7 +11,7 @@ module.exports = function() {
 
   this.Then(/^inconclusive step$/, function (callback) {
     // we want pending here
-    callback.pending();
+    callback(null, 'pending');
   });
 
   this.Then(/^failing step$/, function (callback) {
