@@ -11,7 +11,7 @@ module.exports = function() {
 
   this.Then(/^the scenario will 'inconclusive_(\d+)'$/, function (result, callback) {
     // we want pending here
-    callback.pending();
+    callback(null, 'pending');
   });
 
   this.Then(/^the scenario will 'fail_(\d+)'$/, function (result, callback) {
