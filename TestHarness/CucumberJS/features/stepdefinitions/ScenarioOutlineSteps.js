@@ -28,4 +28,9 @@ module.exports = function() {
   	// nothing to be done here
   	callback();
   });
+  
+  this.When(/^I have special characters for regexes in the value, for example a '(.*)'$/, function (description, callback) {
+    // nothing to be done here
+    callback();
+  });
 };
