@@ -108,6 +108,30 @@ this.FeatureBackground();
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [NUnit.Framework.TestCaseAttribute("**", null)]
+        [NUnit.Framework.TestCaseAttribute("++", null)]
+        [NUnit.Framework.TestCaseAttribute(".*", null)]
+        [NUnit.Framework.TestCaseAttribute("[]", null)]
+        [NUnit.Framework.TestCaseAttribute("{}", null)]
+        [NUnit.Framework.TestCaseAttribute("()", null)]
+        [NUnit.Framework.TestCaseAttribute("^.*(?<foo>BAR)\\s[^0-9]{3,4}A+$", null)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters(string regex, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This scenario contains examples with Regex-special characters", exampleTags);
+#line 21
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
+#line 22
+  testRunner.When(string.Format("I have special characters for regexes in the value, for example a \'{0}\'", regex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+  testRunner.Then("the scenario will \'PASS\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

@@ -17,3 +17,7 @@ end
 When(/^I have parenthesis in the value, for example an '(.*)'$/) do |arg1|
   #Nothing to be done here
 end
+
+When(/^I have special characters for regexes in the value, for example a '(.*)'$/) do |arg1|
+  #Nothing to be done here
+end

@@ -120,6 +120,91 @@ this.FeatureBackground();
         {
             this.ThisIsAScenarioOutlineWithParenthesesHyphenAndComma10_2030_40("pass_1", ((string[])(null)));
         }
+        
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters(string regex, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This scenario contains examples with Regex-special characters", exampleTags);
+#line 21
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
+#line 22
+  testRunner.When(string.Format("I have special characters for regexes in the value, for example a \'{0}\'", regex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+  testRunner.Then("the scenario will \'PASS\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "**")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant0()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("**", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "++")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant1()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("++", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", ".*")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant2()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters(".*", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "[]")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant3()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("[]", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "{}")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant4()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("{}", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "()")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant5()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("()", ((string[])(null)));
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("This scenario contains examples with Regex-special characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Scenarios With Special Characters")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:regex", "^.*(?<foo>BAR)\\s[^0-9]{3,4}A+$")]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant6()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("^.*(?<foo>BAR)\\s[^0-9]{3,4}A+$", ((string[])(null)));
+        }
     }
 }
 #pragma warning restore
