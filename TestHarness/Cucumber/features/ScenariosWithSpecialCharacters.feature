@@ -20,7 +20,7 @@ Scenario Outline: This is a scenario outline with parentheses, hyphen and comma 
 
 Scenario Outline: This scenario contains examples with Regex-special characters
   When I have special characters for regexes in the value, for example a '<regex>'
-  Then the scenario will 'PASS'
+  Then the scenario will 'pass_1'
   
   Examples:
     | regex                          |

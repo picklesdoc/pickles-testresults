@@ -110,6 +110,63 @@ this.FeatureBackground();
             this.ThisIsAScenarioOutlineWithParenthesesHyphenAndComma10_2030_40("pass_1", ((string[])(null)));
         }
         
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters(string regex, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This scenario contains examples with Regex-special characters", exampleTags);
+#line 21
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
+#line 22
+  testRunner.When(string.Format("I have special characters for regexes in the value, for example a \'{0}\'", regex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+  testRunner.Then("the scenario will \'PASS\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 0", SourceLine=26)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant0()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("**", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 1", SourceLine=27)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant1()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("++", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 2", SourceLine=28)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant2()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters(".*", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 3", SourceLine=29)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant3()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("[]", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 4", SourceLine=30)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant4()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("{}", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 5", SourceLine=31)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant5()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("()", ((string[])(null)));
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("This scenario contains examples with Regex-special characters, Variant 6", SourceLine=32)]
+        public virtual void ThisScenarioContainsExamplesWithRegex_SpecialCharacters_Variant6()
+        {
+            this.ThisScenarioContainsExamplesWithRegex_SpecialCharacters("^.*(?<foo>BAR)\\s[^0-9]{3,4}A+$", ((string[])(null)));
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {
