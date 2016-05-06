@@ -26,6 +26,12 @@ namespace AutomationLayer
         }
     }
 
+    [When(@"I have special characters for regexes in the value, for example a '(.*)'")]
+    public void WhenIHaveSpecialCharactersForRegexesInTheValueForExampleARegex(string regex)
+    {
+        // nothing to be done
+    }    
+
     [When(@"I have backslashes in the value, for example a '(.*)'")]
     public void WhenIHaveBackslashesInTheValueForExampleAFilePath(string filePath)
     {
